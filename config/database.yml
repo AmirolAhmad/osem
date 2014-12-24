@@ -52,3 +52,10 @@ production:
   database: osem_production
   username: osem
   password: <%= ENV['OSEM_DATABASE_PASSWORD'] %>
+
+
+staging:
+  <<: *default
+  database: osem_staging
+  username: osem
+  password: <%= ENV['OSEM_DATABASE_PASSWORD'] %>
