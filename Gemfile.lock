@@ -98,6 +98,7 @@ GEM
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (2.9.1)
+    newrelic_rpm (3.9.6.257)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -173,6 +174,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   mysql2
+  newrelic_rpm
   rails (= 4.1.8)
   rails_config
   sass-rails (~> 4.0.3)
