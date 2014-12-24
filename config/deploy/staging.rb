@@ -1,6 +1,6 @@
 set :application, 'osem_staging'
-set :stage, :production
-set :rails_env, :production
+set :stage, :staging
+set :rails_env, :staging
 
 # Simple Role Syntax
 # ==================
