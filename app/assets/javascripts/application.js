@@ -26,7 +26,6 @@
 //= require onepager/jquery.pagescroller.lite
 //= require onepager/init
 //= require main
-//= require gmaps/maps.api
 //= require gmaps/gmap3.min
 //= require gmaps/init
 //= require ct-mediaSection/jquery.stellar.min
