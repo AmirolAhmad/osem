@@ -1,2 +1,19 @@
+<% content_for :title do %>
+  Osem Network Ent
+<% end %>
+<% content_for :meta_tags do %>
+  <%= render :partial => 'application/meta_tags',
+             :locals => {
+                  :type => "website",
+                  :title => "Osem Network Ent",
+                  :url => request.url,
+                  :description => "Osem Network Enterprise description",
+                  :canonical => request.url,
+                  :og_title => "Osem Network Ent",
+                  :og_description => "Osem Network Enterprise description",
+                  :og_image => ""
+             } %>
+<% end %>
+
 <h1>Pages#index</h1>
 <p>Find me in app/views/pages/index.html.erb</p>.
