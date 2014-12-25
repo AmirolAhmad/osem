@@ -9,12 +9,13 @@
   <meta name="author" content="Osem Network Enterprise">
 
   <title><%= (title = yield :title).blank? ? "Osem Network Enterprise" : title %></title>
-  
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
   <%= yield :meta_tags %>
+  <%= render "analytics" %>
 
 	<%= favicon_link_tag 'favicon.ico', :rel => 'apple-touch-icon shortcut icon', :type => 'image/png' %>
 </head>
