@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html class="no-js" lang="en">
+<head lang="en">
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Osem Network Enterprise">
   <meta name="keywords" content="">
   <meta name="author" content="Osem Network Enterprise">
@@ -11,7 +11,6 @@
   <title><%= (title = yield :title).blank? ? "Osem Network Enterprise" : title %></title>
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
   <%= yield :meta_tags %>
@@ -19,9 +18,12 @@
 
 	<%= favicon_link_tag 'favicon.ico', :rel => 'apple-touch-icon shortcut icon', :type => 'image/png' %>
 </head>
-<body>
+<body class="cssAnimate ct-navbar-isTransparent-toInverse ct-navbar--fixedTop ct-js-navbarMakeSmaller ct--darkMotive">
 
-<%= yield %>
+  <%= render partial: "header" %>
+  <%= yield %>
 
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  
 </body>
 </html>

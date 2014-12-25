@@ -1,0 +1,70 @@
+<div class="ct-navbarMobile ct-navbarMobile--inverse">
+    <a class="navbar-brand" href="index.html"><%= image_tag('demo-content/logo.png', alt: "Orlando Logo") %> </a>
+    <button type="button" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+
+<div class="ct-menuMobile">
+    <ul class="ct-menuMobile-navbar">
+        <li class="onepage"><a href="#section1">Home</a></li>
+        <li class="onepage"><a href="#section2">About</a></li>
+        <li class="onepage"><a href="#section3">Team</a></li>
+        <li class="onepage"><a href="#section3">Services</a></li>
+        <li class="onepage"><a href="#section4">Portfolio</a></li>
+        <li class="onepage"><a href="#section5">Blog</a></li>
+        <li class="onepage"><a href="#section6">Contact</a></li>
+    </ul>
+</div>
+
+<div id="ct-js-wrapper" class="ct-pageWrapper">
+    <nav class="navbar ct-navbar--transparent ct-navbar--logoright" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html"><%= image_tag('demo-content/logo.png', alt: "Orlando Logo") %> </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav ct-navbarNav--secundaryActive ct-navbar--fadeIn yamm">
+                    <li class="onepage"><a href="#section1">Home</a></li>
+                    <li class="onepage"><a href="#section2">About</a></li>
+                    <li class="onepage"><a href="#section3">Team</a></li>
+                    <li class="onepage"><a href="#section3">Services</a></li>
+                    <li class="onepage"><a href="#section4">Portfolio</a></li>
+                    <li class="onepage"><a href="#section5">Blog</a></li>
+                    <li class="onepage"><a href="#section6">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav ct-navbar--options">
+                    <li>
+                        <a id="ct-js-navSearch" class="ct-navbar-navSearch" href="#"><i class="fa fa-search"></i><span
+                                class="hidden-sm hidden-md"> Search</span></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#"><img src="<%= image_path('flags/png/gb.png') %>" alt="English"><span class="hidden-sm hidden-md"> EN</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><img src="<%= image_path('flags/png/gb.png') %>" alt="English"> English</a></li>
+                            <li><a href="#"><img src="<%= image_path('flags/png/es.png') %>" alt="Espanol"> Espanol</a></li>
+                            <li><a href="#"><img src="<%= image_path('flags/png/fr.png') %>" alt="Francais"> Francais</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+            <div class="ct-navbar-search">
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Please type keywords..." required>
+                    </div>
+                    <button class="ct-navbar-search-button" type="submit">
+                        <i class="fa fa-search fa-fw"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    <!-- /.container -->
+    </nav>
