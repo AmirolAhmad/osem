@@ -26,6 +26,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 gem 'rails_config'
 gem 'newrelic_rpm'
+gem 'dalli'
 
 group :development do
 	gem 'capistrano', github: "capistrano/capistrano", require: false
